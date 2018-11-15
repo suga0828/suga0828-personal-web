@@ -1,3 +1,11 @@
+* {
+  --grey-1: #292f33;
+  --grey-2: #40494f;
+  --grey-3: #7a9888;
+  --green: #33e6a4;
+  --white: #e8e3d0;
+}
+
 /* Fonts */
 @import "../assets/fonts/stylesheet.css";
 
@@ -24,13 +32,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidenav {
   z-index: 2;
-}
-
-@media only screen and (min-width: 993px) {
-	
-	.sidenav,
-	.sidenav-overlay {
-		display: none !important;	
-	}
-
 }
