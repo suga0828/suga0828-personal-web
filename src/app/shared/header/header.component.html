@@ -3,11 +3,17 @@
 		<nav>
 			<div class="nav-wrapper">
 				<a aria-label="menu" href="#" data-target="mobile-demo" class="sidenav-trigger">
-					<img src="../assets/images/menu.png" alt="">
+					<img src="assets/images/menu.png" alt="">
 				</a>
 
 				<ul class="right hide-on-med-and-down">
-					<li>
+					<li class="navbar-item">
+						<a aria-label="about" rel="noopener" routerLink="/about">About me</a>
+					</li>
+					<li class="navbar-item">
+						<a aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
+					</li>
+					<li class="navbar-item">
 						<a aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
 					</li>
 				</ul>
@@ -15,8 +21,14 @@
 		</nav>
 
 		<ul class="sidenav" id="mobile-demo">
-			<li class="">
-				<a class="sidenav-close closebtn" href="#!">&times;</a>
+			<li>
+				<a class="sidenav-close closebtn">&times;</a>
+			</li>
+			<li>
+				<a aria-label="about" rel="noopener" routerLink="/about">About me</a>
+			</li>
+			<li>
+				<a aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
 			</li>
 			<li>
 				<a aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
@@ -36,4 +48,5 @@
 	        </h2>
 	    </div>
 	</div>
+
 </section>
