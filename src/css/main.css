@@ -1,3 +1,11 @@
+* {
+  --grey-1: #292f33;
+  --grey-2: #40494f;
+  --grey-3: #7a9888;
+  --green: #33e6a4;
+  --white: #e8e3d0;
+}
+
 /* Fonts */
 @import "../assets/fonts/stylesheet.css";
 

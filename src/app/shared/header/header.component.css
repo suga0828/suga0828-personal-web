@@ -1,26 +1,13 @@
-* {
-	--grey-1: #292f33;
-	--grey-2: #40494f;
-	--grey-3: #7a9888;
-	--green: #33e6a4;
-	--white: #e8e3d0;
-}
-
 .header {
 	width: 100%;
-	/*height: 350px;*/
-	height: 100%;
+	height: calc(100vh - 150px);
 	background: linear-gradient(
 		to right,
 		var(--grey-1),
 		var(--grey-2)
 	);
-	color: var(--white);
 	text-align: center;
-}
-
-.header .navbar-fixed .sidenav-trigger {
-	color: var(--grey-3);
+	color: var(--white);
 }
 
 .header .navbar-fixed nav {
@@ -32,8 +19,9 @@
 	box-shadow: none;
 }
 
-.header .navbar-fixed ul {
-	background: transparent;
+.header .navbar-fixed .nav-wrapper ul li a {
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .header .navbar-fixed .sidenav {
@@ -46,7 +34,7 @@
 }
 
 .header .navbar-fixed .sidenav  li a {
-	color: #e8e3d0;
+	color: var(--white);
 	font-size: 18px;
 }
 
@@ -66,14 +54,14 @@
 .header-name {
 	width: 50%;
 	margin-left: 25%;
-	/*padding-top: 80px;*/
+	padding-top: 80px;
 	font-family: 'DINPro', sans-serif;
 	color: var(--green);
 }
 
 .header-name h1 {
 	padding: 20px;
-	border: solid 2px #e8e3d0;
+	border: solid 2px var(--white);
 	font-size: 50px;
 }
 
@@ -81,8 +69,7 @@
 	position: absolute;
 	width: 30%;
 	margin-left: 35%;
-	/*margin-top: -20px;*/
-	color: #e8e3d0;
+	margin-top: -20px;
 }
 
 .header-prof h2 {
@@ -93,7 +80,7 @@
 .header-prof h2 hr {
 	width: 15px;
 	border: none;
-	background-color: #e8e3d0;
+	background-color: var(--white);
 	height: 2px;
 	margin-top: 3%;
 }
