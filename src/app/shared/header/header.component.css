@@ -1,6 +1,8 @@
 .header {
 	width: 100%;
+  /* For now */
 	height: calc(100vh - 150px);
+  /* ------- */
 	background: linear-gradient(
 		to right,
 		var(--grey-1),
@@ -46,7 +48,9 @@
 
 .header-me {
 	position: relative;
-	top: calc(50% - 100px);
+  /* For now */
+  top: calc(50% - 100px);
+  /* ------- */
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -93,10 +97,13 @@
 }
 
 @media only screen and (max-width: 992px) {
+
   .header-name {
     width: 90% !important;
     margin-left: 5% !important;
-    padding-top: 50px !important;
+    /* For now */
+    /*padding-top: 50px !important;*/
+    /* ------- */
   }
 
   .header-prof {
@@ -114,4 +121,43 @@
     display: none;
   }
 
+}
+
+  /* For now */
+@media only screen and (max-width: 992px) {
+  .header {
+    height: auto;
+  }
+  .header-me {
+    padding: calc( (100vh - 56px - 154px - 150px)/2 ) 0 !important;
+
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .header-name {
+    padding-top: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .header-name h1 {
+    font-size: 3em;
+  }
+
+  .header-me {
+    padding: calc( (100vh - 56px - 136px - 150px)/2 ) 0 !important;
+  }
+}
+
+@media only screen and (max-height: 414px) {
+  .header-name h1 {
+    font-size: 3em;
+  }
+
+  .header-me {
+    padding: calc( (100vh - 56px - 98px - 150px)/2 ) 0 !important;
+  }
 }
