@@ -1,0 +1,163 @@
+.header {
+	width: 100%;
+  /* For now */
+	height: calc(100vh - 150px);
+  /* ------- */
+	background: linear-gradient(
+		to right,
+		var(--grey-1),
+		var(--grey-2)
+	);
+	text-align: center;
+	color: var(--white);
+}
+
+.header .navbar-fixed nav {
+	background: linear-gradient(
+		to right,
+		var(--grey-1),
+		var(--grey-2)
+	);
+	box-shadow: none;
+}
+
+.header .navbar-fixed .nav-wrapper ul li a {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.header .navbar-fixed .sidenav {
+	background: var(--grey-3);
+	padding-top: 30px;
+}
+
+.header .navbar-fixed .sidenav  li {
+	padding: 10px 0px;
+}
+
+.header .navbar-fixed .sidenav  li a {
+	color: var(--white);
+	font-size: 18px;
+}
+
+.header h2 {
+	background-color: var(--grey-3);
+	padding: 5px 0px;
+	display: flex;
+}
+
+.header-me {
+	position: relative;
+  /* For now */
+  top: calc(50% - 100px);
+  /* ------- */
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-name {
+	width: 50%;
+	margin-left: 25%;
+	padding-top: 80px;
+	font-family: 'DINPro', sans-serif;
+	color: var(--green);
+}
+
+.header-name h1 {
+	padding: 20px;
+	border: solid 2px var(--white);
+	font-size: 50px;
+}
+
+.header-prof {
+	position: absolute;
+	width: 30%;
+	margin-left: 35%;
+	margin-top: -20px;
+}
+
+.header-prof h2 {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.header-prof h2 hr {
+	width: 15px;
+	border: none;
+	background-color: var(--white);
+	height: 2px;
+	margin-top: 3%;
+}
+
+.sidenav .closebtn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    font-size: 27px !important;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .header-name {
+    width: 90% !important;
+    margin-left: 5% !important;
+    /* For now */
+    /*padding-top: 50px !important;*/
+    /* ------- */
+  }
+
+  .header-prof {
+    width: 70% !important;
+    margin-left: 14.5% !important;
+  }
+
+  .header-prof h2 {
+    padding: 10px 10px !important;
+    display: block !important;
+    font-size: 20px !important;
+  }
+
+  .header-prof h2 hr {
+    display: none;
+  }
+
+}
+
+  /* For now */
+@media only screen and (max-width: 992px) {
+  .header {
+    height: auto;
+  }
+  .header-me {
+    padding: calc( (100vh - 56px - 154px - 150px)/2 ) 0 !important;
+
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .header-name {
+    padding-top: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .header-name h1 {
+    font-size: 3em;
+  }
+
+  .header-me {
+    padding: calc( (100vh - 56px - 136px - 150px)/2 ) 0 !important;
+  }
+}
+
+@media only screen and (max-height: 414px) {
+  .header-name h1 {
+    font-size: 3em;
+  }
+
+  .header-me {
+    padding: calc( (100vh - 56px - 98px - 150px)/2 ) 0 !important;
+  }
+}

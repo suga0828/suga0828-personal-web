@@ -1,0 +1,41 @@
+footer {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(
+    to right,
+    var(--grey-1),
+    var(--grey-2)
+  );
+  color: var(--white);
+  margin: 0;
+  padding-top: 10px;
+}
+
+.social-media {
+  margin: 0;
+}
+
+.social-icon {
+  margin: 3px;
+  color: var(--white);
+}
+
+.icon {
+  font-size: 36px;
+}
+
+.icon:hover {
+  color: #7a9888
+}
+
+.footer-copyright {
+}
+
+.heart {
+  color: var(--green);
+}
+
+.footer-link {
+  color: var(--grey-3);
+  font-weight: bold;
+}
