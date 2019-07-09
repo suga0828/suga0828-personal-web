@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavComponent } from './nav/nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -17,8 +15,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 library.add(faTwitterSquare, faGithubSquare, faLinkedin, faMedium, faEnvelopeSquare);
 
 @NgModule({
-	imports: [CommonModule, FontAwesomeModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
-	declarations: [HeaderComponent, FooterComponent, NavComponent],
+	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
+	declarations: [HeaderComponent, FooterComponent],
 	exports:  [HeaderComponent, FooterComponent]
 })
 
