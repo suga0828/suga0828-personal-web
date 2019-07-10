@@ -1,5 +1,21 @@
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom theme
+@import 'my-theme.scss';
+
+// specify theme class eg: <body class="my-theme"> ... </body>
+.my-theme {
+  
+  // use our theme with angular-material-theme mixin
+  @include angular-material-theme($my-theme);
+}
+
+
 /* Fonts */
-@import "../assets/fonts/stylesheet.scss";
+@import '../assets/fonts/stylesheet.scss';
 
 /* Var colors */
 * {
@@ -8,29 +24,4 @@
   --grey-3: #7a9888;
   --green: #33e6a4;
   --white: #e8e3d0;
-}
-
-/* Reset */
-html, body, div {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-
-html, body {
-	height: 100%;
-	width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-}
-
-/* ToDo: move this from here */
-.sidenav-overlay {
-  z-index: 1;
-}
-
-.sidenav {
-  z-index: 2;
 }

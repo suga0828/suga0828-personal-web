@@ -1,0 +1,92 @@
+// https://material.io/tools/color/#!/?view.left=0&view.right=0
+// http://mcg.mbitson.com
+
+$md-primarypallete: (
+  50 : #e8e9ea,
+  100 : #c6c8ca,
+  200 : #a0a4a7,
+  300 : #798084,
+  400 : #5d6469,
+  500 : #40494f,
+  600 : #3a4248,
+  700 : #32393f,
+  800 : #2a3136,
+  900 : #1c2126,
+  A100 : #6eb7ff,
+  A200 : #3b9dff,
+  A400 : #0884ff,
+  A700 : #0077ee,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-secondarypallete: (
+  50 : #e7fcf4,
+  100 : #c2f8e4,
+  200 : #99f3d2,
+  300 : #70eebf,
+  400 : #52eab2,
+  500 : #33e6a4,
+  600 : #2ee39c,
+  700 : #27df92,
+  800 : #20db89,
+  900 : #14d578,
+  A100 : #ffffff,
+  A200 : #d2ffe8,
+  A400 : #9fffcd,
+  A700 : #85ffc0,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+// $c-primary-light: #6b747b;
+// $primary-rgba: rgba(#6b747b, .8);
+// $c-primary: #40494f;
+// $c-primary-dark: #192227;
+// $c-primary-on-text: #ffffff;
+
+// $c-secondary: #33e6a4;
+// $c-secondary-on-text: #000000;
+// $c-secondary-light: #76ffd6;
+// $c-secondary-dark: #00b375;
+
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$my-theme-primary: mat-palette($md-primarypallete);
+$my-theme-accent: mat-palette($md-secondarypallete);
+$my-theme-warn: mat-palette($mat-deep-orange, A200);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$my-theme: mat-light-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+    $my-theme-warn
+);
