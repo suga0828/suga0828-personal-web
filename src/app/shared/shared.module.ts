@@ -16,9 +16,9 @@ import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 library.add(faTwitterSquare, faGithubSquare, faLinkedin, faMedium, faEnvelopeSquare);
 
 @NgModule({
-	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
+	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ],
 	declarations: [HeaderComponent, FooterComponent, SidenavListComponent],
-	exports:  [HeaderComponent, FooterComponent]
+	exports:  [HeaderComponent, FooterComponent, SidenavListComponent, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ]
 })
 
 export class SharedModule { }

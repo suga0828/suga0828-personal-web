@@ -1,5 +1,8 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="sidenav.toggle()" type="button" aria-label="Toggle sidenav">
+  <button mat-icon-button (click)="onToggleSidenav()" type="button" aria-label="Toggle sidenav">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
+  <a mat-list-item aria-label="about" rel="noopener" routerLink="/about">About me</a>
+  <a mat-list-item aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
+  <a mat-list-item aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
 </mat-toolbar>
