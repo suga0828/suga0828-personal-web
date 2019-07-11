@@ -10,13 +10,14 @@ import { faTwitterSquare, faGithubSquare, faLinkedin, faMedium } from '@fortawes
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 
 // Add an icon to the library for convenient access in other components
 library.add(faTwitterSquare, faGithubSquare, faLinkedin, faMedium, faEnvelopeSquare);
 
 @NgModule({
 	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
-	declarations: [HeaderComponent, FooterComponent],
+	declarations: [HeaderComponent, FooterComponent, SidenavListComponent],
 	exports:  [HeaderComponent, FooterComponent]
 })
 
