@@ -1,52 +1,5 @@
-<section class="header">
-	<!--  <div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<a aria-label="menu" href="#" data-target="mobile-demo" class="sidenav-trigger">
-					<img src="assets/images/menu.png" alt="">
-				</a>
-
-				<ul class="right hide-on-med-and-down">
-					<li class="navbar-item">
-						<a aria-label="about" rel="noopener" routerLink="/about">About me</a>
-					</li>
-					<li class="navbar-item">
-						<a aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
-					</li>
-					<li class="navbar-item">
-						<a aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<ul class="sidenav" id="mobile-demo">
-			<li>
-				<a class="sidenav-close closebtn">&times;</a>
-			</li>
-			<li>
-				<a aria-label="about" rel="noopener" routerLink="/about">About me</a>
-			</li>
-			<li>
-				<a aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
-			</li>
-			<li>
-				<a aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
-			</li>
-		</ul>
-	</div> -->
-
-  <div class="header-me">
-    <div class="header-name">
-      <h1>ALEXANDER SANDOVAL</h1>
-    </div>
-    <div class="header-prof">
-      <h2>
-        <hr/>
-        FRONTEND DEVELOPER
-        <hr/>
-      </h2>
-    </div>
-    </div>
-
-</section>
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()" type="button" aria-label="Toggle sidenav">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+</mat-toolbar>

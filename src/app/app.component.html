@@ -1,20 +1,24 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav">
-    <mat-toolbar><app-header></app-header></mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
+  <mat-sidenav #sidenav role="navigation">
+    <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button mat-icon-button (click)="drawer.toggle()" type="button" aria-label="Toggle sidenav">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>suga0828</span>
-    </mat-toolbar>
-    <!-- <router-outlet></router-outlet> -->
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <div class="header-me">
+        <div class="header-name">
+          <h1>ALEXANDER SANDOVAL</h1>
+        </div>
+        <div class="header-prof">
+          <h2>
+            <hr/>
+            FRONTEND DEVELOPER
+            <hr/>
+          </h2>
+        </div>
+      </div>
+      <!-- <router-outlet></router-outlet> -->
+    </main>
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
