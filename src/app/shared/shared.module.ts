@@ -11,14 +11,15 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Add an icon to the library for convenient access in other components
 library.add(faTwitterSquare, faGithubSquare, faLinkedin, faMedium, faEnvelopeSquare);
 
 @NgModule({
-	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ],
+	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, FlexLayoutModule ],
 	declarations: [HeaderComponent, FooterComponent, SidenavListComponent],
-	exports:  [HeaderComponent, FooterComponent, SidenavListComponent, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ]
+	exports:  [HeaderComponent, FooterComponent, SidenavListComponent, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, FlexLayoutModule ]
 })
 
 export class SharedModule { }
