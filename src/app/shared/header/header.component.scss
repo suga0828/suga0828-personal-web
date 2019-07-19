@@ -1,44 +1,18 @@
 .header {
-	width: 100%;
-  /* For now */
-	height: calc(100vh - 150px);
-  /* ------- */
-	background: linear-gradient(
-		to right,
-		var(--grey-1),
-		var(--grey-2)
-	);
-	text-align: center;
-	color: var(--white);
+  background-color: rgba(white, .1)
 }
 
-.header .navbar-fixed nav {
-	background: linear-gradient(
-		to right,
-		var(--grey-1),
-		var(--grey-2)
-	);
-	box-shadow: none;
+.header_item {
+  border: 1px solid;
+  padding: 0 30px;
+  font-size: 18px;
+  color: white;
+
+  &:hover {
+    background-color: rgba(red, .5)
+  }
 }
 
-.header .navbar-fixed .nav-wrapper ul li a {
-	font-size: 18px;
-	font-weight: 500;
-}
-
-.header .navbar-fixed .sidenav {
-	background: var(--grey-3);
-	padding-top: 30px;
-}
-
-.header .navbar-fixed .sidenav  li {
-	padding: 10px 0px;
-}
-
-.header .navbar-fixed .sidenav  li a {
-	color: var(--white);
-	font-size: 18px;
-}
 
 .header h2 {
 	background-color: var(--grey-3);
@@ -123,11 +97,7 @@
 
 }
 
-  /* For now */
 @media only screen and (max-width: 992px) {
-  .header {
-    height: auto;
-  }
   .header-me {
     padding: calc( (100vh - 56px - 154px - 150px)/2 ) 0 !important;
 
