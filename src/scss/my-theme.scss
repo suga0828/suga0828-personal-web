@@ -1,7 +1,7 @@
 // https://material.io/tools/color/#!/?view.left=0&view.right=0
 // http://mcg.mbitson.com
 
-$md-primarypallete: (
+$primary-pallete: (
   50 : #e8e9ea,
   100 : #c6c8ca,
   200 : #a0a4a7,
@@ -34,7 +34,7 @@ $md-primarypallete: (
   )
 );
 
-$md-secondarypallete: (
+$secondary-pallete: (
   50 : #e7fcf4,
   100 : #c2f8e4,
   200 : #99f3d2,
@@ -80,12 +80,12 @@ $md-secondarypallete: (
 
 // define 3 theme color
 // mat-palette accepts $palette-name, main, lighter and darker variants
-$my-theme-primary: mat-palette($md-primarypallete);
-$my-theme-accent: mat-palette($md-secondarypallete);
+$my-theme-primary: mat-palette($primary-pallete);
+$my-theme-accent: mat-palette($secondary-pallete);
 $my-theme-warn: mat-palette($mat-deep-orange, A200);
 
 // create theme (use mat-dark-theme for themes with dark backgrounds)
-$my-theme: mat-light-theme(
+$my-theme: mat-dark-theme(
     $my-theme-primary,
     $my-theme-accent,
     $my-theme-warn

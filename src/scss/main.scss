@@ -1,3 +1,4 @@
+@import './normalize';
 @import '~@angular/material/theming';
 
 // always include only once per project
@@ -6,22 +7,13 @@
 // import our custom theme
 @import 'my-theme.scss';
 
+@include angular-material-theme($my-theme);
+
 // specify theme class eg: <body class="my-theme"> ... </body>
-.my-theme {
-  
+.my-light-theme {
   // use our theme with angular-material-theme mixin
   @include angular-material-theme($my-theme);
 }
 
-
 /* Fonts */
-@import '../assets/fonts/stylesheet.scss';
-
-/* Var colors */
-* {
-  --grey-1: #292f33;
-  --grey-2: #40494f;
-  --grey-3: #7a9888;
-  --green: #33e6a4;
-  --white: #e8e3d0;
-}
+@import '../assets/fonts/fonts.scss';
