@@ -1,8 +1,10 @@
-<mat-toolbar class="header" color="primary" role="heading" fxLayoutAlign="flex-end center">
-  <button mat-icon-button (click)="onToggleSidenav()" type="button" aria-label="Toggle sidenav">
-    <fa-icon [icon]="['fas', 'bars']" size="2x"></fa-icon>
+<mat-toolbar class="header" color="primary" role="heading" fxLayoutAlign="flex-end" fxLayoutAlign.xs="flex-start">
+  <button mat-button class="header__menu" fxHide="true" [fxHide.xs]="false" type="button" (click)="onToggleSidenav()" aria-label="Toggle sidenav">
+    <fa-icon [icon]="['fas', 'bars']" size="x2"></fa-icon>
   </button>
-  <a class="header_item" mat-list-item aria-label="about" rel="noopener" routerLink="/about">About me</a>
-  <a class="header_item" mat-list-item aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
-  <a class="header_item" mat-list-item aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
+  <nav class="header__nav" fxHide="true" [fxHide.gt-xs]="false" fxLayoutAlign="center center">
+    <a mat-button class="header__item" aria-label="about" rel="noopener" routerLink="/about">About me</a>
+    <a mat-button class="header__item" aria-label="projets" rel="noopener" routerLink="/projects">Projects</a>
+    <a mat-button class="header__item" aria-label="contact" rel="noopener" href="mailto:alexander.sf0828@gmail.com">Contact</a>
+  </nav>
 </mat-toolbar>
