@@ -1,29 +1,25 @@
-<footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="social-media center-align">
-                <a class="social-icon" arial-label="Github" target="_blank" rel="noopener" href="https://github.com/suga0828">
-                    <fa-icon class="icon" [icon]="['fab', 'github-square']"></fa-icon>
-                </a>
-                <a class="social-icon" arial-label="Twitter" target="_blank" rel="noopener" href="https://twitter.com/suga0828_">
-                    <fa-icon class="icon" [icon]="['fab', 'twitter-square']"></fa-icon>
-                </a>
-                <a class="social-icon" arial-label="Medium" target="_blank" rel="noopener" href="https://medium.com/@suga0828">
-                    <fa-icon class="icon" [icon]="['fab', 'medium']"></fa-icon>
-                </a>
-                <a class="social-icon" arial-label="Linkelin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/suga0828/">
-                    <fa-icon class="icon" [icon]="['fab', 'linkedin']"></fa-icon>
-                </a>
-                <a class="social-icon" arial-label="Email" target="_blank" rel="noopener" href="mailto:alexander.sf0828@gmail.com">
-                    <fa-icon class="icon" [icon]="['fas', 'envelope-square']"></fa-icon>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container center-align">
-        © 2018 All right reserved. Made with <span class="heart">&#x2764;</span> for
-        <a class="footer-link" href="https://suga0828.github.io" target="_blank">suga0828</a>
-        </div>
-    </div>
-</footer>
+<mat-toolbar class="footer" color="primary">
+  <mat-toolbar-row fxLayoutAlign="center center">
+    <a class="footer__icon" arial-label="Github" target="_blank" rel="noopener" href="https://github.com/suga0828">
+      <fa-icon [icon]="['fab', 'github-square']" size="3x"></fa-icon>
+    </a>
+    <a class="footer__icon" arial-label="Twitter" target="_blank" rel="noopener" href="https://twitter.com/suga0828_">
+      <fa-icon [icon]="['fab', 'twitter-square']" size="3x"></fa-icon>
+    </a>
+    <a class="footer__icon" arial-label="Medium" target="_blank" rel="noopener" href="https://medium.com/@suga0828">
+      <fa-icon [icon]="['fab', 'medium']" size="3x"></fa-icon>
+    </a>
+    <a class="footer__icon" arial-label="Linkelin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/suga0828/">
+      <fa-icon [icon]="['fab', 'linkedin']" size="3x"></fa-icon>
+    </a>
+    <a class="footer__icon" arial-label="Email" target="_blank" rel="noopener" href="mailto:alexander.sf0828@gmail.com">
+      <fa-icon [icon]="['fas', 'envelope-square']" size="3x"></fa-icon>
+    </a>
+  </mat-toolbar-row>
+  <mat-toolbar-row fxLayoutAlign="center center">
+    <small>
+      Code with <fa-icon class="footer__icon_warn" [icon]="['fas', 'heart']" color="accent"></fa-icon> for
+      <a class="footer__icon_accent" href="https://suga0828.github.io/suga0828" target="_blank">suga0828</a>
+    </small>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,41 +1,25 @@
-footer {
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(
-    to right,
-    var(--grey-1),
-    var(--grey-2)
-  );
-  color: var(--white);
-  margin: 0;
-  padding-top: 10px;
+@import "~src/scss/variables";
+
+.footer__icon {
+  color: $c-neutro;
+  margin: 0 6px;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    color: #7a9888;
+  }
 }
 
-.social-media {
-  margin: 0;
+.footer__icon_warn {
+  color: #33e6a4;
 }
 
-.social-icon {
-  margin: 3px;
-  color: var(--white);
-}
+.footer__icon_accent {
+  color: #7a9888;
+  font-weight: 700;
+  transition: all 100ms ease-in-out;
 
-.icon {
-  font-size: 36px;
-}
-
-.icon:hover {
-  color: #7a9888
-}
-
-.footer-copyright {
-}
-
-.heart {
-  color: var(--green);
-}
-
-.footer-link {
-  color: var(--grey-3);
-  font-weight: bold;
+  &:hover {
+    color: #33e6a4;
+  }
 }

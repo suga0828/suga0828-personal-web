@@ -1,8 +1,6 @@
 @import './normalize';
 
 /* Fonts */
-@import '../assets/fonts/fonts.scss';
-
-a {
-  text-decoration: none;
-}
+@import './fonts.scss';
+@import './generic.scss';
+@import './variables.scss';
