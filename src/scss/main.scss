@@ -1,19 +1,8 @@
 @import './normalize';
-@import '~@angular/material/theming';
-
-// always include only once per project
-@include mat-core();
-
-// import our custom theme
-@import 'my-theme.scss';
-
-@include angular-material-theme($my-theme);
-
-// specify theme class eg: <body class="my-theme"> ... </body>
-.my-light-theme {
-  // use our theme with angular-material-theme mixin
-  @include angular-material-theme($my-theme);
-}
 
 /* Fonts */
 @import '../assets/fonts/fonts.scss';
+
+a {
+  text-decoration: none;
+}
