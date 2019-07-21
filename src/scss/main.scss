@@ -1,36 +1,6 @@
+@import './normalize';
+
 /* Fonts */
-@import "../assets/fonts/stylesheet.scss";
-
-/* Var colors */
-* {
-  --grey-1: #292f33;
-  --grey-2: #40494f;
-  --grey-3: #7a9888;
-  --green: #33e6a4;
-  --white: #e8e3d0;
-}
-
-/* Reset */
-html, body, div {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-
-html, body {
-	height: 100%;
-	width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-}
-
-/* ToDo: move this from here */
-.sidenav-overlay {
-  z-index: 1;
-}
-
-.sidenav {
-  z-index: 2;
-}
+@import './fonts.scss';
+@import './generic.scss';
+@import './variables.scss';

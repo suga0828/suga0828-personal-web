@@ -1,0 +1,12 @@
+@import "~src/scss/variables";
+
+main {
+  background-color: $c-primary;
+  min-height: calc(100vh - 168px);
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    min-height: calc(100vh - 192px);
+  }
+}
