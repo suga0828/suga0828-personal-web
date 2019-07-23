@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import * as M from 'materialize-css/dist/js/materialize';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
-	styleUrls: ['./header.component.css']
+	styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 
+  @Output() public sidenavToggle = new EventEmitter();
+
 	constructor() { }
 
-	ngOnInit() {
-		var elems = document.querySelectorAll(".sidenav");
-		var instances = M.Sidenav.init(elems);
-	}
+	ngOnInit() { }
 
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
+  }
 }

@@ -1,0 +1,32 @@
+@import "~src/scss/variables";
+
+.footer__icon {
+  color: $c-neutro;
+  font-size: 3rem;
+  margin: 0 6px;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    color: #7a9888;
+  }
+}
+
+.footer__icon_warn {
+  color: #33e6a4;
+}
+
+.footer__icon_accent {
+  color: #7a9888;
+  font-weight: 700;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    color: #33e6a4;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer__icon {
+    font-size: 4rem;
+  }
+}
