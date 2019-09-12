@@ -1,0 +1,86 @@
+{
+  "configVersion": 1,
+  "timestamp": 1568320661277,
+  "index": "https://suga0828.github.io/suga0828/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://suga0828.github.io/suga0828/favicon.ico",
+        "https://suga0828.github.io/suga0828/index.html",
+        "https://suga0828.github.io/suga0828/main-es2015.74614c2e921b550dbb40.js",
+        "https://suga0828.github.io/suga0828/main-es5.810d134ee0aa227308d8.js",
+        "https://suga0828.github.io/suga0828/polyfills-es2015.81248e54629f81f7ef55.js",
+        "https://suga0828.github.io/suga0828/polyfills-es5.effd690a2534b192f422.js",
+        "https://suga0828.github.io/suga0828/runtime-es2015.858f8dd898b75fe86926.js",
+        "https://suga0828.github.io/suga0828/runtime-es5.741402d1d47331ce975c.js",
+        "https://suga0828.github.io/suga0828/styles.8b9c9fb0c20e41e6cb75.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://suga0828.github.io/suga0828/assets/fonts/DINPro-Bold.eot",
+        "https://suga0828.github.io/suga0828/assets/fonts/DINPro-Bold.woff2",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-128x128.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-144x144.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-152x152.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-192x192.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-384x384.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-512x512.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-72x72.png",
+        "https://suga0828.github.io/suga0828/assets/icons/icon-96x96.png",
+        "https://suga0828.github.io/suga0828/assets/images/menu.png"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://suga0828.github.io/suga0828/assets/fonts/DINPro-Bold.eot": "ac2b8583f5cac8414a49199394c8a7664cffe8c9",
+    "https://suga0828.github.io/suga0828/assets/fonts/DINPro-Bold.woff2": "a9930c7daa8017e9b278a50084dc7418bfd031da",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://suga0828.github.io/suga0828/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://suga0828.github.io/suga0828/assets/images/menu.png": "ca1f2d2682e6c97a4d565877ede127912aba6df2",
+    "https://suga0828.github.io/suga0828/favicon.ico": "20b184a5b899876a4717c4f8b61f781cca105c68",
+    "https://suga0828.github.io/suga0828/index.html": "54525d41d889436c1cf6f7229f22512d74bbf13c",
+    "https://suga0828.github.io/suga0828/main-es2015.74614c2e921b550dbb40.js": "f9455a822fad4439bada465eea6c925d5d8caa25",
+    "https://suga0828.github.io/suga0828/main-es5.810d134ee0aa227308d8.js": "0a97f6491ab42c08415fa429509eb374725459fb",
+    "https://suga0828.github.io/suga0828/polyfills-es2015.81248e54629f81f7ef55.js": "77f974dd2b186031cfc4f4526d96db4efcd39353",
+    "https://suga0828.github.io/suga0828/polyfills-es5.effd690a2534b192f422.js": "d48e6353a252678ba0d8d18a53ac77d13016d6e7",
+    "https://suga0828.github.io/suga0828/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://suga0828.github.io/suga0828/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://suga0828.github.io/suga0828/styles.8b9c9fb0c20e41e6cb75.css": "f11d288b03adfdde2d9d02b6c48dcf73773f5e65"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
