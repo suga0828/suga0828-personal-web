@@ -12,6 +12,7 @@
     ]
   },
   "hosting": {
+    "site": "suga0828",
     "public": "dist/suga0828",
     "ignore": [
       "firebase.json",
