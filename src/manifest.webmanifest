@@ -1,15 +1,15 @@
 {
   "dir": "ltr",
   "lang": "en",
-  "name": "suga0828",
+  "name": "suga0828.dev",
   "short_name": "Alexander Sandoval | Frontend developer",
-  "theme_color": "#1976d2",
+  "theme_color": "#33e6a4",
   "description": "Alexander Sandoval's personal Web Page",
   "display": "fullscreen",
   "orientation": "any",
-  "background_color": "#fafafa",
-  "scope": "/",
-  "start_url": "/",
+  "background_color": "#40494f",
+  "scope": "/suga0828/",
+  "start_url": "/suga0828/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -51,5 +51,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "serviceworker": {
+    "src": "ngsw-worker.js",
+    "scope": "/suga0828/",
+    "update_via_cache": "none"
+  }
 }
