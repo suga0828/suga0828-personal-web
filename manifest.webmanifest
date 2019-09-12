@@ -8,8 +8,8 @@
   "display": "fullscreen",
   "orientation": "any",
   "background_color": "#fafafa",
-  "scope": "/suga0828/",
-  "start_url": "/suga0828/index.html",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -54,7 +54,7 @@
   ],
   "serviceworker": {
     "src": "ngsw-worker.js",
-    "scope": "/suga0828/",
+    "scope": "/",
     "update_via_cache": "none"
   }
 }
