@@ -54,7 +54,7 @@
   ],
   "serviceworker": {
     "src": "ngsw-worker.js",
-    "scope": "/",
+    "scope": "/suga0828/",
     "update_via_cache": "none"
   }
 }
