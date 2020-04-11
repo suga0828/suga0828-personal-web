@@ -1,25 +1,32 @@
 <mat-toolbar class="footer" color="primary">
-  <mat-toolbar-row fxLayoutAlign="center center">
-    <a class="footer__icon" arial-label="Github" target="_blank" rel="noopener" href="https://github.com/suga0828">
-      <fa-icon [icon]="['fab', 'github-square']"></fa-icon>
-    </a>
-    <a class="footer__icon" arial-label="Twitter" target="_blank" rel="noopener" href="https://twitter.com/suga0828_">
-      <fa-icon [icon]="['fab', 'twitter-square']"></fa-icon>
-    </a>
-    <a class="footer__icon" arial-label="Medium" target="_blank" rel="noopener" href="https://medium.com/@suga0828">
-      <fa-icon [icon]="['fab', 'medium']"></fa-icon>
-    </a>
-    <a class="footer__icon" arial-label="Linkelin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/suga0828/">
-      <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-    </a>
-    <a class="footer__icon" arial-label="Email" target="_blank" rel="noopener" href="mailto:alexander.sf0828@gmail.com">
-      <fa-icon [icon]="['fas', 'envelope-square']"></fa-icon>
-    </a>
+  <mat-toolbar-row>
+    <ng-container *ngFor="let sN of socialNetworks">
+      <a
+        color="primary"
+        class="footer__icon"
+        target="_blank"
+        rel="noopener"
+        [href]="sN.path"
+      >
+        <fa-icon [icon]="sN.icon"></fa-icon>
+      </a>
+    </ng-container>
   </mat-toolbar-row>
-  <mat-toolbar-row fxLayoutAlign="center center">
-    <small>
-      Code with <fa-icon class="footer__icon_warn" [icon]="['fas', 'heart']" color="accent"></fa-icon> for
-      <a class="footer__icon_accent" href="https://suga0828.github.io/suga0828" target="_blank">suga0828</a>
-    </small>
+  <mat-toolbar-row class="mat-toolbar-small">
+    Code with
+    <fa-icon
+      class="footer__icon_warn"
+      [icon]="['fas', 'heart']"
+      color="accent"
+    ></fa-icon>
+    for
+    <a
+      class="footer__icon_accent"
+      rel="noopener"
+      href="https://suga0828.github.io/suga0828"
+      target="_blank"
+    >
+      suga0828
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>

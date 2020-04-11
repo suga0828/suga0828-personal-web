@@ -1,32 +1,46 @@
-@import "~src/scss/variables";
+@import '~src/scss/variables';
+
+mat-toolbar-row {
+  justify-content: center;
+}
 
 .footer__icon {
-  color: $c-neutro;
-  font-size: 3rem;
+  color: $c-primary;
+  font-size: 40px;
   margin: 0 6px;
   transition: all 100ms ease-in-out;
 
   &:hover {
-    color: #7a9888;
+    color: $c-grey;
   }
+}
+
+.mat-toolbar-small {
+  font-size: 80%;
+  font-weight: lighter;
 }
 
 .footer__icon_warn {
-  color: #33e6a4;
+  color: $c-green;
+  padding: 0 4px;
 }
 
 .footer__icon_accent {
-  color: #7a9888;
+  color: $c-grey;
   font-weight: 700;
   transition: all 100ms ease-in-out;
+  padding: 0 4px;
 
   &:hover {
-    color: #33e6a4;
+    color: $c-green;
   }
 }
 
-@media screen and (min-width: 600px) {
-  .footer__icon {
-    font-size: 4rem;
-  }
+fa-icon:not(.footer__icon_warn) {
+  display: flex;
+  justify-content: center;
+  background-color: $c-neutro;
+  padding: 6px;
+  border-radius: 6px;
+  min-width: 52px;
 }

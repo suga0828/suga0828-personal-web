@@ -6,24 +6,23 @@ import { FooterComponent } from './footer/footer.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTwitterSquare, faGithubSquare, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare, faBars, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faBars, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 // Add an icon to the library for convenient access in other components
-library.add(faTwitterSquare, faGithubSquare, faLinkedin, faMedium, faEnvelopeSquare, faBars, faHeart);
+library.add(faTwitter, faGithub, faLinkedinIn, faMediumM, faEnvelope, faBars, faHeart);
 
 @NgModule({
-	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, FlexLayoutModule ],
-	declarations: [HeaderComponent, FooterComponent, SidenavListComponent],
-	exports:  [HeaderComponent, FooterComponent, SidenavListComponent, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, FlexLayoutModule ]
+	imports: [CommonModule, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ],
+	declarations: [HeaderComponent, FooterComponent, SidenavComponent],
+	exports:  [HeaderComponent, FooterComponent, SidenavComponent, FontAwesomeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule ]
 })
 
 export class SharedModule { }
