@@ -1,0 +1,15 @@
+<mat-sidenav #sidenav role="navigation"> </mat-sidenav>
+<mat-nav-list class="sidenav">
+  <ng-container *ngFor="let link of links">
+    <ng-container *ngIf="link.internalLink; else externalLink">
+      <a class="sidenav__item" [routerLink]="link.path">
+        {{ link.title }}
+      </a>
+    </ng-container>
+    <ng-template #externalLink>
+      <a class="sidenav__item" [href]="link.path">
+        {{ link.title }}
+      </a>
+    </ng-template>
+  </ng-container>
+</mat-nav-list>
