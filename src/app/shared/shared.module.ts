@@ -9,7 +9,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTwitterSquare, faGithubSquare, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare, faBars, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
