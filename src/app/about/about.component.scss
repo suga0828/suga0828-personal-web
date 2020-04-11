@@ -1,6 +1,9 @@
-@import "~src/scss/variables";
+@import '~src/scss/variables';
 
 .jumbo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 192px);
 }
 
@@ -19,7 +22,7 @@
 .jumbo__subtitle {
   position: absolute;
   display: flex;
-  font-size: .8rem;
+  font-size: 0.8rem;
   bottom: -3px;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -36,7 +39,7 @@
     height: 2px;
     background-color: $c-neutro;
     display: block;
-    content: "";
+    content: '';
     top: 50%;
     transform: translateY(-50%);
   }
