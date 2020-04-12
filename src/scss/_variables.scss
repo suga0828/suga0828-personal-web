@@ -1,6 +1,86 @@
-$c-neutro: #ffffff;
-$c-neutro-disabled: rgba(255, 255, 255, 0.38);
+@import '~@angular/material/theming';
 
-$c-grey: #7a9888;
-$c-green: #33e6a4;
-$c-primary: #40494f;
+$primary-pallete: (
+  50: #e8e9ea,
+  100: #c6c8ca,
+  200: #a0a4a7,
+  300: #798084,
+  400: #5d6469,
+  500: #40494f,
+  600: #3a4248,
+  700: #32393f,
+  800: #2a3136,
+  900: #1c2126,
+  A100: #6eb7ff,
+  A200: #3b9dff,
+  A400: #0884ff,
+  A700: #0077ee,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$secondary-pallete: (
+  50: #e7fcf4,
+  100: #c2f8e4,
+  200: #99f3d2,
+  300: #70eebf,
+  400: #52eab2,
+  500: #33e6a4,
+  600: #2ee39c,
+  700: #27df92,
+  800: #20db89,
+  900: #14d578,
+  A100: #ffffff,
+  A200: #d2ffe8,
+  A400: #9fffcd,
+  A700: #85ffc0,
+  contrast: (
+    50: $dark-secondary-text,
+    100: $dark-secondary-text,
+    200: $dark-secondary-text,
+    300: $dark-secondary-text,
+    400: $dark-secondary-text,
+    500: $light-secondary-text,
+    600: $light-secondary-text,
+    700: $light-secondary-text,
+    800: $light-secondary-text,
+    900: $light-secondary-text,
+    A100: $dark-secondary-text,
+    A200: $light-secondary-text,
+    A400: $light-secondary-text,
+    A700: $light-secondary-text,
+  ),
+);
+
+$my-theme-primary: mat-palette($mat-blue-gray);
+$my-theme-accent: mat-palette($secondary-pallete);
+$my-theme-warn: mat-palette($mat-deep-orange, A200);
+$background-color: mat-color($my-theme-primary, default);
+$my-theme: mat-dark-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+$background: map-get($my-theme, background);
+$background: map_merge($background, (background: $background-color));
+$my-theme: map_merge($my-theme, (background: $background));
+$foreground: map-get($my-theme, foreground);
+
+
+$my-light-theme-primary: mat-palette($mat-indigo);
+$my-light-theme-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-light-theme: mat-light-theme($my-light-theme-primary, $my-light-theme-accent);
+$background-light-color: mat-color($my-light-theme-primary, default);
+$background-light: map-get($my-light-theme, background);
+$background-light: map_merge($background-light, (background: $background-light-color));
+$my-light-theme: map_merge($my-light-theme, (background: $background-light));
