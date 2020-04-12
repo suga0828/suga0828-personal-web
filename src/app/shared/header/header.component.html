@@ -15,7 +15,7 @@
   <nav class="header__nav" *ngIf="!(isHandset$ | async)">
     <ng-container *ngFor="let link of links">
       <ng-container *ngIf="link.internalLink; else externalLink">
-        <a mat-button class="header__item" [routerLink]="link.path">
+        <a disabled mat-button class="header__item" [routerLink]="link.path">
           {{ link.title }}
         </a>
       </ng-container>

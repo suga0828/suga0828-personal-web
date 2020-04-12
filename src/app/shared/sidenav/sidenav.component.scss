@@ -1,17 +1,28 @@
 @import '~src/scss/variables';
 
-mat-nav-list {
-  min-width: 200px;
+app-sidenav {
+  .mat-list-item.mat-list-item-disabled {
+    color: mat-color($my-theme-primary, 100);
+    background-color: $background-color;
+  }
+
+  mat-nav-list {
+    min-width: 200px;
+  }
+
+  .sidenav__item {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 0;
+    text-transform: uppercase;
+  }
 }
 
-.sidenav__item {
-  font-size: 18px;
-  font-weight: 700;
-  padding: 16px 0;
-  text-transform: uppercase;
+.my-light-theme {
+  app-sidenav {
+    .mat-list-item.mat-list-item-disabled {
+      color: mat-color($my-light-theme-primary, 100);
+      background-color: white;
+    }
+  }
 }
-
-// .mat-list-item-disabled {
-//   background-color: transparent;
-//   color: $c-neutro-disabled;
-// }

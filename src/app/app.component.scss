@@ -1,11 +1,17 @@
 @import '~src/scss/variables';
 
-main {
-  min-height: calc(100vh - 168px);
-}
+app-root {
+  .mat-drawer {
+    background-color: $background-color;
+  }
 
-@media screen and (min-width: 600px) {
   main {
-    min-height: calc(100vh - 192px);
+    min-height: calc(100vh - 168px);
+  }
+
+  @media screen and (min-width: 600px) {
+    main {
+      min-height: calc(100vh - 192px);
+    }
   }
 }

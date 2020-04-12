@@ -1,57 +1,73 @@
 @import '~src/scss/variables';
 
-mat-toolbar-row {
-  justify-content: center;
-}
-
-.footer__icon {
-  color: $c-primary;
-  font-size: 30px;
-  margin: 0 2px;
-  transition: all 100ms ease-in-out;
-
-  &:hover {
-    // color: $c-grey;
+app-footer {
+  mat-toolbar-row {
+    justify-content: center;
   }
-}
 
-.mat-toolbar-small {
-  font-size: 80%;
-  font-weight: lighter;
-}
-
-.footer__icon_warn {
-  // color: $c-green;
-  padding: 0 4px;
-}
-
-.footer__icon_accent {
-  // color: $c-grey;
-  font-weight: 700;
-  transition: all 100ms ease-in-out;
-  padding: 0 4px;
-
-  &:hover {
-    // color: $c-green;
-  }
-}
-
-fa-icon:not(.footer__icon_warn) {
-  display: flex;
-  justify-content: center;
-  // background-color: $c-neutro;
-  padding: 6px;
-  border-radius: 6px;
-  min-width: 42px;
-}
-
-@media screen and (min-width: 600px) {
   .footer__icon {
-    font-size: 40px;
-    margin: 0 6px;
+    color: mat-color($my-theme-primary, default);
+    background-color: white;
+    font-size: 30px;
+    margin: 0 2px;
+    transition: all 100ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 6px;
+    min-width: 42px;
+
+    &:hover {
+      color: mat-color($my-theme-accent, default);
+    }
   }
 
-  fa-icon:not(.footer__icon_warn) {
-    min-width: 52px;
+  .mat-toolbar-small {
+    font-size: 80%;
+    font-weight: lighter;
+  }
+
+  .footer__icon_warn {
+    color: mat-color($my-theme-warn, default);
+    padding: 0 4px;
+  }
+
+  .footer__icon_accent {
+    color: mat-color($my-theme-primary, 300);
+    font-weight: 700;
+    transition: all 100ms ease-in-out;
+    padding: 0 4px;
+
+    &:hover {
+      color: mat-color($my-theme-accent, default);
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .footer__icon {
+      font-size: 40px;
+      margin: 0 6px;
+      min-width: 52px;
+    }
+  }
+}
+
+.my-light-theme {
+  app-footer {
+    .footer__icon {
+      color: mat-color($my-light-theme-primary, default);
+
+      &:hover {
+        color: mat-color($my-light-theme-accent, default);
+      }
+    }
+
+    .footer__icon_accent {
+      color: mat-color($my-light-theme-primary, 400);
+
+      &:hover {
+        color: mat-color($my-light-theme-accent, default);
+      }
+    }
   }
 }
