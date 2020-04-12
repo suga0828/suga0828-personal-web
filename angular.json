@@ -111,7 +111,9 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://suga0828.github.io/suga0828/"
+          }
         }
       }
     },
