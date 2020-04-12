@@ -1,22 +1,21 @@
 <mat-toolbar class="header" color="primary" role="heading">
-  <nav class="header__nav">
-    <button
-      mat-button
-      class="header__menu"
-      type="button"
-      (click)="onToggleSidenav()"
-      aria-label="Toggle sidenav"
-    >
-      <fa-icon [icon]="['fas', 'bars']" size="x2"></fa-icon>
-    </button>
+  <button mat-button type="button" aria-label="Toggle theme" (click)="changeTheme(theme)">
+    <fa-icon [icon]="['fas', 'adjust']" size="x2"></fa-icon>
+  </button>
+  <button
+    mat-button
+    class="header__button"
+    type="button"
+    (click)="sidenavToggle.emit()"
+    aria-label="Toggle sidenav"
+    *ngIf="isHandset$ | async"
+  >
+    <fa-icon [icon]="['fas', 'bars']" size="x2"></fa-icon>
+  </button>
+  <nav class="header__nav" *ngIf="!(isHandset$ | async)">
     <ng-container *ngFor="let link of links">
       <ng-container *ngIf="link.internalLink; else externalLink">
-        <a
-          disabled="true"
-          mat-button
-          class="header__item"
-          [routerLink]="link.path"
-        >
+        <a mat-button class="header__item" [routerLink]="link.path">
           {{ link.title }}
         </a>
       </ng-container>

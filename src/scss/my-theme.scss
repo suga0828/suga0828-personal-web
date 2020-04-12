@@ -93,8 +93,6 @@ $my-light-theme-primary: mat-palette($mat-indigo);
 $my-light-theme-accent: mat-palette($mat-pink, A200, A100, A400);
 $my-light-theme: mat-light-theme($my-light-theme-primary, $my-light-theme-accent);
 
-
-
 @include angular-material-theme($my-theme);
 
 .my-light-theme {
