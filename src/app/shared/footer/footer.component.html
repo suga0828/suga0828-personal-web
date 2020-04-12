@@ -1,31 +1,16 @@
 <mat-toolbar class="footer" color="primary">
   <mat-toolbar-row>
     <ng-container *ngFor="let sN of socialNetworks">
-      <a
-        color="primary"
-        class="footer__icon"
-        target="_blank"
-        rel="noopener"
-        [href]="sN.path"
-      >
+      <a class="footer__icon" target="_blank" rel="noopener" [href]="sN.path">
         <fa-icon [icon]="sN.icon"></fa-icon>
       </a>
     </ng-container>
   </mat-toolbar-row>
   <mat-toolbar-row class="mat-toolbar-small">
     Code with
-    <fa-icon
-      class="footer__icon_warn"
-      [icon]="['fas', 'heart']"
-      color="accent"
-    ></fa-icon>
+    <fa-icon class="footer__icon_warn" [icon]="['fas', 'heart']" color="accent"></fa-icon>
     for
-    <a
-      class="footer__icon_accent"
-      rel="noopener"
-      href="https://suga0828.github.io/suga0828"
-      target="_blank"
-    >
+    <a class="footer__icon_accent" rel="noopener" [href]="webPage" target="_blank">
       suga0828
     </a>
   </mat-toolbar-row>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WEB_PAGE, EMAIL } from '../constants/contact.constant';
 
 @Component({
   selector: 'app-footer',
@@ -7,12 +8,14 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  webPage = WEB_PAGE;
+
   socialNetworks = [
     { path: "https://github.com/suga0828", icon: ['fab', 'github'] },
     { path: "https://twitter.com/suga0828_", icon: ['fab', 'twitter'] },
     { path: "https://medium.com/@suga0828", icon: ['fab', 'medium-m'] },
     { path: "https://www.linkedin.com/in/suga0828/", icon: ['fab', 'linkedin-in'] },
-    { path: "mailto:alexander.sf0828@gmail.com", icon: ['fas', 'envelope'] }
+    { path: `mailto:${EMAIL}`, icon: ['fas', 'envelope'] }
   ];
 
 }

@@ -1,3 +1,5 @@
+import { EMAIL } from './contact.constant';
+
 export const ROUTES = {
   home: {
     path: '/home',
@@ -11,5 +13,5 @@ export const ROUTES = {
     path: '/projects',
     name: 'projects'
   },
-  mailTo: 'mailto:alexander.sf0828@gmail.com'
+  mailTo: `mailto:${EMAIL}`
 };
