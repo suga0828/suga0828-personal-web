@@ -6,7 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faTwitter, faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faBars, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBars, faHeart, faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -40,6 +40,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 })
 export class SharedModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faTwitter, faGithub, faLinkedinIn, faMediumM, faEnvelope, faBars, faHeart);
+    library.addIcons(faTwitter, faGithub, faLinkedinIn, faMediumM, faEnvelope, faBars, faHeart, faAdjust);
   }
 }

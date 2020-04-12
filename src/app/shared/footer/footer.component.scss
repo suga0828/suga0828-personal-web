@@ -6,12 +6,12 @@ mat-toolbar-row {
 
 .footer__icon {
   color: $c-primary;
-  font-size: 40px;
-  margin: 0 6px;
+  font-size: 30px;
+  margin: 0 2px;
   transition: all 100ms ease-in-out;
 
   &:hover {
-    color: $c-grey;
+    // color: $c-grey;
   }
 }
 
@@ -21,26 +21,37 @@ mat-toolbar-row {
 }
 
 .footer__icon_warn {
-  color: $c-green;
+  // color: $c-green;
   padding: 0 4px;
 }
 
 .footer__icon_accent {
-  color: $c-grey;
+  // color: $c-grey;
   font-weight: 700;
   transition: all 100ms ease-in-out;
   padding: 0 4px;
 
   &:hover {
-    color: $c-green;
+    // color: $c-green;
   }
 }
 
 fa-icon:not(.footer__icon_warn) {
   display: flex;
   justify-content: center;
-  background-color: $c-neutro;
+  // background-color: $c-neutro;
   padding: 6px;
   border-radius: 6px;
-  min-width: 52px;
+  min-width: 42px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer__icon {
+    font-size: 40px;
+    margin: 0 6px;
+  }
+
+  fa-icon:not(.footer__icon_warn) {
+    min-width: 52px;
+  }
 }
