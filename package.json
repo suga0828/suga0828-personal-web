@@ -4,8 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
+    "build:ci": "ng build --prod --sourceMap=false --base-href https://suga0828.github.io/suga0828/",
     "test": "jest --coverage",
+    "test:ci": "ng test --watch=false --code-coverage --source-map true",
     "lint": "ng lint"
   },
   "private": true,

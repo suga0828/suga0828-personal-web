@@ -35,6 +35,20 @@ jobs:
       - name: Linter
         run: npm run lint
 
+      - name: Archive build
+        if: success()
+        uses: actions/upload-artifact@v1
+        with:
+          name: deploy_dist
+          path: dist
+
+      - name: Archive code coverage result
+        if: success()
+        uses: actions/upload-artifact@v1
+        with:
+          name: deploy_coverage
+          path: coverage
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -50,4 +64,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist/suga0828
+          FOLDER: deploy_dist/suga0828
