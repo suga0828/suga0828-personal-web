@@ -1,17 +1,28 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgModule } from '@angular/core';
+import { TestBed, ComponentFixture, waitForAsync } from '@angular/core/testing';
+
+import { MockModule } from 'ng-mocks';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AboutComponent } from './about.component';
+
+@NgModule({
+  imports: [MatSidenavModule],
+})
+class MockedDependenciesModule {}
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
   let fixture: ComponentFixture<AboutComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [AboutComponent],
+        imports: [MockModule(MockedDependenciesModule)],
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AboutComponent);
@@ -19,7 +30,7 @@ describe('AboutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

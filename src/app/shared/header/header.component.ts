@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, Inject, Renderer2 } from '@angular/core';
-import { DOCUMENT } from '@angular/common'
+import { DOCUMENT } from '@angular/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { BreakpointState, BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
@@ -11,7 +11,7 @@ import { LINKS } from '../constants/links.constants';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  theme = 'dark-theme'
+  theme = 'dark-theme';
   links = LINKS;
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -25,8 +25,8 @@ export class HeaderComponent {
     private renderer: Renderer2
   ) {}
 
-  changeTheme(theme: string) {
-    if (this.theme === 'dark-theme') {
+  changeTheme(theme: string): void {
+    if (theme === 'dark-theme') {
       this.theme = 'light-theme';
       this.renderer.addClass(this.document.body, 'my-light-theme');
     } else {

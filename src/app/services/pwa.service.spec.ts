@@ -6,7 +6,7 @@ describe('PwaService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: PwaService = TestBed.get(PwaService);
+    const service: PwaService = TestBed.inject(PwaService);
     expect(service).toBeTruthy();
   });
 });
