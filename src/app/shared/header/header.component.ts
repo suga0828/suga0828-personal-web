@@ -20,9 +20,9 @@ export class HeaderComponent {
   @Output() public sidenavToggle = new EventEmitter();
 
   constructor(
-    @Inject(DOCUMENT) private document: Document,
-    private breakpointObserver: BreakpointObserver,
-    private renderer: Renderer2
+    @Inject(DOCUMENT) private readonly document: Document,
+    @Inject(BreakpointObserver) private readonly breakpointObserver: BreakpointObserver,
+    private readonly renderer: Renderer2
   ) {}
 
   changeTheme(theme: string): void {

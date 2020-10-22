@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { TestBed, ComponentFixture, waitForAsync } from '@angular/core/testing';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { AboutComponent } from './about/about.component';
 import { MockModule } from 'ng-mocks';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
 
@@ -24,20 +24,23 @@ describe('AppComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [AppComponent, AboutComponent],
-        imports: [
-          RouterTestingModule.withRoutes([{ path: '', component: AboutComponent }]),
-          MockModule(MockedDependenciesModule),
+        declarations: [AppComponent],
+        imports: [RouterTestingModule, MockModule(MockedDependenciesModule)],
+        providers: [
+          {
+            provide: MediaMatcher,
+            useValue: {
+              matchMedia: () => ({ matches: true }),
+            },
+          },
         ],
       }).compileComponents();
+
+      fixture = TestBed.createComponent(AppComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
     })
   );
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AppComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should be created', () => {
     expect(component).toBeTruthy();

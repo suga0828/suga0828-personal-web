@@ -1,4 +1,4 @@
-import { Component, HostListener, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, Inject, ViewChild, ViewEncapsulation } from '@angular/core';
 
 import { MediaMatcher } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -14,7 +14,7 @@ export class AppComponent {
 
   @ViewChild('sidenav') sidenav: MatSidenav;
 
-  constructor(media: MediaMatcher) {
+  constructor(@Inject(MediaMatcher) media: MediaMatcher) {
     this.desktopQuery = media.matchMedia('(min-width: 600px)');
   }
 

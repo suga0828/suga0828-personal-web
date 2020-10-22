@@ -26,14 +26,12 @@ describe('SidenavComponent', () => {
           MockModule(MockedDependenciesModule),
         ],
       }).compileComponents();
+
+      fixture = TestBed.createComponent(SidenavComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
     })
   );
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should be created', () => {
     expect(component).toBeTruthy();

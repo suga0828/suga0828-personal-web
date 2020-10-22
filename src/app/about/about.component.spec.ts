@@ -21,14 +21,12 @@ describe('AboutComponent', () => {
         declarations: [AboutComponent],
         imports: [MockModule(MockedDependenciesModule)],
       }).compileComponents();
+
+      fixture = TestBed.createComponent(AboutComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
     })
   );
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AboutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should be created', () => {
     expect(component).toBeTruthy();
