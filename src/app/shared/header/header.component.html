@@ -12,7 +12,7 @@
   >
     <fa-icon [icon]="['fas', 'bars']" size="x2"></fa-icon>
   </button>
-  <nav class="header__nav" *ngIf="!(isHandset$ | async)">
+  <nav class="header__nav" *ngIf="(isHandset$ | async) === false">
     <ng-container *ngFor="let link of links">
       <ng-container *ngIf="link.internalLink; else externalLink">
         <a disabled mat-button class="header__item" [routerLink]="link.path">
